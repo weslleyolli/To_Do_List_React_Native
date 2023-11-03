@@ -12,11 +12,11 @@ export const styles = StyleSheet.create({
         backgroundColor: "#0D0D0D",
         paddingHorizontal: 24
     },
-    containerMain:{
+    containerForm:{
         width: "100%",
         position: "relative",
         marginHorizontal: 24,
-        
+        marginBottom: 70,
     }, 
     textInput: {
         width: "73%",
@@ -45,5 +45,29 @@ export const styles = StyleSheet.create({
     textButton:{
         color: "#FFFFFF",
         fontSize: 16,
+    },
+    containerData: {
+        marginHorizontal: 28,
+        flexDirection: "row",
+        justifyContent: "space-between"
+    },
+    containerProgress:{
+        flexDirection: "row",
+        gap: 15,
+    },
+    textCreate: {
+        fontWeight: "bold",
+        fontSize: 14,
+        color: "#4EA8DE"
+    },
+    textCompleted: {
+        fontWeight: "bold",
+        fontSize: 14,
+        color: "#8284FA"
+    },
+    textNumberProgress: {
+        fontWeight: "bold",
+        fontSize: 12,
+        color: "#FFF"
     }
 })

@@ -9,7 +9,7 @@ export default function Home() {
             <View style={styles.containerHeader}>
                 <Image source={Logo} />
             </View>
-            <View style={styles.containerMain}>
+            <View style={styles.containerForm}>
                 <TextInput
                     style={styles.textInput}
                     placeholder="Add a new task..."
@@ -18,7 +18,16 @@ export default function Home() {
                 <TouchableOpacity style={styles.containerButtonAdd}>
                     <Text style={styles.textButton}>+</Text>
                 </TouchableOpacity>
-
+            </View>
+            <View style={styles.containerData}>
+                <View style={styles.containerProgress}>
+                    <Text style={styles.textCreate}>Create</Text>
+                    <Text style={styles.textNumberProgress}>0</Text>
+                </View>
+                <View style={styles.containerProgress}>
+                    <Text style={styles.textCompleted}>Completed</Text>
+                    <Text style={styles.textNumberProgress}>0</Text>
+                </View>
             </View>
         </View>
     )
