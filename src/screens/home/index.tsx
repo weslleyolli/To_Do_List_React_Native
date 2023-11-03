@@ -1,5 +1,5 @@
 import { styles } from "./styles";
-import { Text, View, Image, TextInput } from "react-native";
+import { Text, View, Image, TextInput, TouchableOpacity } from "react-native";
 
 import Logo from "../../../assets/Logo.png";
 
@@ -15,6 +15,9 @@ export default function Home() {
                     placeholder="Add a new task..."
                     placeholderTextColor="#808080"
                 />
+                <TouchableOpacity style={styles.containerButtonAdd}>
+                    <Text style={styles.textButton}>+</Text>
+                </TouchableOpacity>
 
             </View>
         </View>

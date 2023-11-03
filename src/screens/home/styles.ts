@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native"
 export const styles = StyleSheet.create({
     container:{
         flex: 1,
-        backgroundColor: "#1E1E1E"
+        backgroundColor: "#1E1E1E",
     },
     containerHeader: {
         height: 200,
@@ -13,12 +13,13 @@ export const styles = StyleSheet.create({
         paddingHorizontal: 24
     },
     containerMain:{
+        width: "100%",
         position: "relative",
         marginHorizontal: 24,
         
     }, 
     textInput: {
-        width: "100%",
+        width: "73%",
         position: "absolute",
         top: -25,
         height: 54,
@@ -29,5 +30,20 @@ export const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowRadius: 2,
         shadowOpacity: 0.5,
+    },
+    containerButtonAdd:{
+        width: 54,
+        height: 54,
+        position: "absolute",
+        top: -25,
+        right: 50,
+        backgroundColor: "#1E6F9F",
+        borderRadius: 6,
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    textButton:{
+        color: "#FFFFFF",
+        fontSize: 16,
     }
 })
