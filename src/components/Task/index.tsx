@@ -7,13 +7,20 @@ import { styles } from "./styles";
 type Props = {
     textTask: string;
     onRemove: () => void;
+    taskComplete: number;
+    setTaskComplete: (value: number) => void;
 }
 
-export default function Task({ textTask, onRemove }: Props) {
+export function Task({ textTask, onRemove, taskComplete, setTaskComplete  }: Props) {
     const [isChecked, setIsChecked] = useState(false);
 
     const toggleCheckBox = () => {
         setIsChecked(!isChecked);
+        if (!isChecked) {
+            setTaskComplete((prevState: number) => prevState + 1);
+        } else {
+            setTaskComplete((prevState: number) => prevState - 1);
+        }
     };
     // {isChecked ? 'Selecionado' : 'Não selecionado'}
     return (

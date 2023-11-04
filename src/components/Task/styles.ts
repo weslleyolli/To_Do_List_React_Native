@@ -9,6 +9,7 @@ export const styles = StyleSheet.create({
         paddingVertical: 12,
         paddingRight: 20,
         marginRight: 28,
+        marginBottom: 10,
         borderRadius: 8,
     },
     checkbox: {

@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
         position: "absolute",
         top: -25,
         height: 54,
+        color: "#FFFFFF",
         backgroundColor: "#262626",
         padding: 16,
         borderRadius: 6,
@@ -52,7 +53,8 @@ export const styles = StyleSheet.create({
     },
     containerData: {
         flexDirection: "row",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        alignItems: "center",
     },
     containerProgress:{
         flexDirection: "row",
@@ -90,5 +92,13 @@ export const styles = StyleSheet.create({
     textSubtitleEmpty: {
         color: "#808080",
         fontSize: 14,
+    },
+    textNumberProgressFocused: {
+        width: 25,
+        height: 19,
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: "#333333",
+        borderRadius: 100,
     }
 })
