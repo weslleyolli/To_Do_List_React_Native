@@ -34,7 +34,7 @@ export function Task({ textTask, onRemove, taskComplete, setTaskComplete}: Props
                 checkedIcon="check"
                 checkedColor="#1E6F9F"
             />
-            <Text numberOfLines={2} style={styles.textTask}>
+            <Text numberOfLines={2} style={!isChecked ? styles.textTask : styles.textTaskChecked}>
                 {textTask}
             </Text>
             <TouchableOpacity onPress={onRemove}>

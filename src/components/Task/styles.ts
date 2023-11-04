@@ -24,5 +24,9 @@ export const styles = StyleSheet.create({
         maxWidth: 200,
         fontSize: 14,
         color: "#F2F2F2"
+    },
+    textTaskChecked: {
+        color: "#808080",
+        textDecorationLine: 'line-through'
     }
 })
