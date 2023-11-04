@@ -4,6 +4,7 @@ import AntDesignIcon from 'react-native-vector-icons/AntDesign';
 import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 import Logo from "../../../assets/Logo.png";
+import Task from "../../components/Task";
 
 export default function Home() {
     return (
@@ -39,6 +40,7 @@ export default function Home() {
                         <Text style={styles.textSubtitleEmpty}>Create tasks and organize your to-do items</Text>
                     </View>
                 </View>
+                <Task />
             </View>
         </View>
     )
