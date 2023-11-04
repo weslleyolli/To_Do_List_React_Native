@@ -46,8 +46,11 @@ export const styles = StyleSheet.create({
         color: "#FFFFFF",
         fontSize: 16,
     },
-    containerData: {
+    containerSection:{
         marginHorizontal: 28,
+        gap: 20,
+    },
+    containerData: {
         flexDirection: "row",
         justifyContent: "space-between"
     },
@@ -69,5 +72,23 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         fontSize: 12,
         color: "#FFF"
+    },
+    containerEmpty: {
+        paddingVertical: 48,
+        paddingHorizontal: 20,
+        alignItems: "center",
+        gap: 16,
+    },
+    containerTextEmpty: {
+        alignItems: "center",
+    },
+    textTitleEmpty: {
+        color: "#808080",
+        fontWeight: "bold",
+        fontSize: 14,
+    },
+    textSubtitleEmpty: {
+        color: "#808080",
+        fontSize: 14,
     }
 })
