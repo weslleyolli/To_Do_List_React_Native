@@ -30,7 +30,9 @@ export default function Home() {
 
     function handleTaskRemove(nameTask: string) {
         setTasks(prevState => prevState.filter(task => task !== nameTask))
-        setTaskComplete(prevState => prevState - 1)
+        if(taskComplete > 0 ){
+            setTaskComplete(prevState => prevState - 1)
+        }
     }
 
     return (

@@ -11,18 +11,18 @@ type Props = {
     setTaskComplete: (value: number) => void;
 }
 
-export function Task({ textTask, onRemove, taskComplete, setTaskComplete  }: Props) {
+export function Task({ textTask, onRemove, taskComplete, setTaskComplete}: Props) {
     const [isChecked, setIsChecked] = useState(false);
 
     const toggleCheckBox = () => {
         setIsChecked(!isChecked);
         if (!isChecked) {
-            setTaskComplete((prevState: number) => prevState + 1);
+            setTaskComplete(prevState => prevState + 1);
         } else {
-            setTaskComplete((prevState: number) => prevState - 1);
+            setTaskComplete(prevState => prevState - 1);
         }
     };
-    // {isChecked ? 'Selecionado' : 'Não selecionado'}
+
     return (
         <View style={styles.containerTask}>
             <CheckBox
