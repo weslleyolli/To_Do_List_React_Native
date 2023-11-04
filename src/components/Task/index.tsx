@@ -4,12 +4,18 @@ import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 import { CheckBox } from 'react-native-elements';
 import { styles } from "./styles";
 
-export default function Task() {
+type Props = {
+    textTask: string;
+    onRemove: () => void;
+}
+
+export default function Task({ textTask, onRemove }: Props) {
     const [isChecked, setIsChecked] = useState(false);
 
     const toggleCheckBox = () => {
         setIsChecked(!isChecked);
     };
+    // {isChecked ? 'Selecionado' : 'Não selecionado'}
     return (
         <View style={styles.containerTask}>
             <CheckBox
@@ -21,8 +27,12 @@ export default function Task() {
                 checkedIcon="check"
                 checkedColor="#1E6F9F"
             />
-            <Text numberOfLines={2}  style={styles.textTask}>{isChecked ? 'Selecionado' : 'Não selecionado'}</Text>
-            <FontAwesomeIcon name="trash-o" size={20} color="#808080" />
+            <Text numberOfLines={2} style={styles.textTask}>
+                {textTask}
+            </Text>
+            <TouchableOpacity onPress={onRemove}>
+                <FontAwesomeIcon name="trash-o" size={20} color="#808080" />
+            </TouchableOpacity>
         </View>
     )
 }
